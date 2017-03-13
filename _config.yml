@@ -1,0 +1,40 @@
+# Site settings
+title: Springloops' Blog
+url: "http://springloops.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl:  # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
+timezone: Asia/Seoul
+description: >
+  敏 is meant that Nimble.
+
+# Your information
+email: springloops@gmail.com
+author: springloops
+avatar: "/imgs/avatar.jpg"
+profile: Steady Developer
+twitter_username: springloop
+github_username: springloops
+facebook_username: springloops
+linkedin_username: in/sungmin-oh-ab859166?trk=hp-identity-name
+youtube_username: springloops
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+permalink: /archivers/:title
+gems:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+# Build settings
+paginate: 10
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

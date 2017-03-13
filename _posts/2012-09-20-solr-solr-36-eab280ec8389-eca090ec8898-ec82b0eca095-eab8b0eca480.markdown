@@ -1,0 +1,47 @@
+---
+author: springloops
+comments: true
+date: 2012-09-20 04:13:00+00:00
+layout: post
+link: https://springloops.wordpress.com/2012/09/20/solr-solr-36-%ea%b2%80%ec%83%89-%ec%a0%90%ec%88%98-%ec%82%b0%ec%a0%95-%ea%b8%b0%ec%a4%80/
+slug: solr-solr-36-%ea%b2%80%ec%83%89-%ec%a0%90%ec%88%98-%ec%82%b0%ec%a0%95-%ea%b8%b0%ec%a4%80
+title: '[solr] solr 3.6 검색 점수 산정 기준'
+wordpress_id: 45
+categories:
+- Open Source/Apache Lucene/Solr
+tags:
+- 검색 점수
+- Score
+- search
+- solr
+- sort
+---
+
+## How are documents scored
+
+Basic scoring factors:
+
+  * tf stands for term frequency - the more times a search term appears in a document, the higher the score
+  * idf stands for inverse document frequency - matches on rarer terms count more than matches on common terms
+  * coord is the coordination factor - if there are multiple terms in a query, the more terms that match, the higher the score
+  * lengthNorm - matches on a smaller field score higher than matches on a larger field
+  * index-time boost - if a boost was specified for a document at index time, scores for searches that match that document will be boosted.
+  * query clause boost - a user may explicitly boost the contribution of one part of a query over another.
+
+  
+
+
+  
+
+
+루씬과 별 차이는 없는듯....
+
+  
+
+
+참고
+
+  
+
+
+[http://wiki.apache.org/solr/SolrRelevancyFAQ#How_are_documents_scored](http://wiki.apache.org/solr/SolrRelevancyFAQ#How_are_documents_scored)

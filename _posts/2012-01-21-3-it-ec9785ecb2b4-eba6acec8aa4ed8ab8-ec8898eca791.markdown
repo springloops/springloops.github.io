@@ -1,0 +1,21 @@
+---
+author: springloops
+comments: true
+date: 2012-01-21 19:58:42+00:00
+layout: post
+link: https://springloops.wordpress.com/2012/01/21/3-it-%ec%97%85%ec%b2%b4-%eb%a6%ac%ec%8a%a4%ed%8a%b8-%ec%88%98%ec%a7%91/
+published: false
+slug: 3-it-%ec%97%85%ec%b2%b4-%eb%a6%ac%ec%8a%a4%ed%8a%b8-%ec%88%98%ec%a7%91
+title: 3. IT 업체 리스트 수집
+wordpress_id: 40
+categories:
+- vision
+---
+
+1. IT 업체 리스트 수집   
+
+2. 기준별 선별 작업  
+
+3. 이력서 준비  
+
+

@@ -1,0 +1,53 @@
+<div class="col-box col-box-author">
+  <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}">
+  <div class="col-box-title name">{{ site.author }}</div>
+  <p>{{ site.profile }}</p>
+  <p class="contact">
+    {% if site.linkedin_username %}
+    <a href="https://www.linkedin.com/{{ site.linkedin_username }}"><img src="/imgs/Linkedin.png"></a>
+    {% endif %}
+    {% if site.facebook_username %}
+    <a href="https://facebook.com/{{ site.facebook_username }}"><img src="/imgs/Facebook.png"></a>
+    {% endif %}
+    {% if site.youtube_username %}
+    <a href="https://www.youtube.com/user/{{ site.youtube_username }}/videos?sort=dd&view=0&shelf_id=0"><img src="/imgs/YouTube.png"></a>
+    {% endif %}
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}"><img src="/imgs/Github.png"></a>
+    {% endif %}
+    {% if site.twitter_username %}
+    <a href="https://twitter.com/{{ site.twitter_username }}"><img src="/imgs/Twitter.png"></a>
+    {% endif %}
+    {% if site.email %}
+    <a href="mailto:{{ site.email }}"><img src ="/imgs/email.png"></a>
+    {% endif %}
+  </p>
+</div>
+
+<div class="col-box">
+  <div class="col-box-title">Newest Posts</div>
+  <ul class="post-list">
+    {% for post in site.posts limit:10 %}
+      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<div class="col-box post-toc hide">
+  <div class="col-box-title">TOC</div>
+</div>
+
+<div class="col-box">
+  <div class="col-box-title">Tag Cloud</div>
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+     <span class="site-tag">
+        <a href="/tags/#{{ tag | first | slugize }}" 
+            style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+        </a>
+    </span>
+    {% endfor %}
+  </div>
+</div>

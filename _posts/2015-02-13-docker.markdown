@@ -1,0 +1,308 @@
+---
+author: springloops
+comments: true
+date: 2015-02-13 09:17:39+00:00
+layout: post
+link: https://springloops.wordpress.com/2015/02/13/docker/
+slug: docker
+title: docker 정리
+wordpress_id: 110
+categories:
+- Open Source/docker
+tags:
+- docker
+- 도커
+- 도커 소개
+---
+
+# Docker 정리
+
+### 이거 두 가지만 챙기자! 꼭!
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:0;margin:0;padding:0;clear:left;border-collapse:collapse;font-family:Arial, Helvetica, FreeSans, sans-serif;" class="confluenceTable" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+
+_  
+_
+
+_  
+_
+
+_  
+_
+
+**_이미지 - class_**
+
+**_컨테이너 - instance_**
+
+  
+
+
+**_이미지 - 붕어빵 틀_**
+
+**_컨테이너 - 붕어빵_**
+
+02. Docker > Screenshot_from_docker.io_about.png" src="http://wiki.coupang.net:8090/download/attachments/31686825/Screenshot_from_docker.io_about.png?version=1&modificationDate=1423818093737" data-image-src="/download/attachments/31686825/Screenshot_from_docker.io_about.png?version=1&modificationDate=1423818093737" data-linked-resource-id="30840525" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screenshot_from_docker.io_about.png" data-base-url="http://wiki.coupang.net:8090" data-linked-resource-container-id="31686825" data-mce-src="http://wiki.coupang.net:8090/download/attachments/31686825/Screenshot_from_docker.io_about.png?version=1&modificationDate=1423818093737" style="border: 1px solid transparent; cursor: move; margin-top: 0px; margin-bottom: 0px;"></tr></tbody></table>
+
+  
+
+
+그리고 읽어보자.
+
+  
+
+
+가상 머신은 격리된 환경을 구축해준다는 데서 매력적이긴 하지만,
+
+실제 배포용으로 쓰기에는 성능 면에서 매우 불리한 도구라고 할 수 있습니다.
+
+당연한 이야기입니다만 일단 운영체제 위에서 또 다른 운영체제를 통째로 돌린다는 것 자체가 리소스를 비효율적으로 활용할 수밖에 없습니다.
+
+이런 가운데 가상 머신의 단점은 극복하면서 장점만을 극대화하기 위한 최적화가 계속해서 이루어지고 있습니다.
+
+도커 역시 이런 단점을 극복하기 위해서 나온 가상화 어플리케이션입니다.
+
+[도커](http://wiki.nacyot.com/documents/docker)는 단순한 가상 머신을 넘어서 어느 플랫폼에서나 재현가능한 어플리케이션 컨테이너를 만들어주는 걸 목표로 합니다.
+
+[LXC](http://wiki.nacyot.com/documents/lxc)(리눅스 컨테이너)라는 독특한 개념에서 출발하는 Docker의 가상화는 기존에 운영체제를 통째로 가상화하는 것과는 접근 자체를 달리합니다.
+
+가상 머신이라고 하기에는 격리된 환경을 만들어주는 도구라고 하는 게 맞을 지도 모릅니다.
+
+블라블라....
+
+그냥 이거 보는걸로.. 끝판왕 : [https://github.com/DockerKorea/documents.docker.co.kr](https://github.com/DockerKorea/documents.docker.co.kr)
+
+[ 02. Docker > skip_detailed_explanation_any_more.jpg" src="http://wiki.coupang.net:8090/download/attachments/31686825/skip_detailed_explanation_any_more.jpg?version=1&modificationDate=1423815325734" data-image-src="/download/attachments/31686825/skip_detailed_explanation_any_more.jpg?version=1&modificationDate=1423815325734" data-linked-resource-id="30840511" data-linked-resource-type="attachment" data-linked-resource-default-alias="skip_detailed_explanation_any_more.jpg" data-base-url="http://wiki.coupang.net:8090" data-linked-resource-container-id="31686825" data-mce-src="http://wiki.coupang.net:8090/download/attachments/31686825/skip_detailed_explanation_any_more.jpg?version=1&modificationDate=1423815325734" style="border: 1px solid transparent; cursor: move;">](https://github.com/DockerKorea/documents.docker.co.kr)
+
+## 소개
+
+  
+
+
+### 개념 + 사용법
+
+  * [anarcher's transhcan - Docker deployment slide](http://anarcher.bitbucket.org/2014-06-19-docker-deployment.html)
+  * [Cloudeveloper - Windows Azure Linux Virtual Machine과 docker를 이용한 Linux 기반의 C# 개발 환경 구축](http://www.rkttu.com/?p=1577)
+  * [Gist - Docker 치트 시트(한국어 번역, @nacyot)](https://gist.github.com/nacyot/8366310)
+  * [Joinc - Docker](http://www.joinc.co.kr/modules/moniwiki/wiki.php/man/12/docker)
+  * [nacyot의 프로그래밍 이야기 - 도커(Docker) 튜토리얼 : 깐 김에 배포까지](http://blog.nacyot.com/articles/2014-01-27-easy-deploy-with-docker/)
+  * [PYRASIS.COM - Docker 기본 사용법](http://pyrasis.com/Docker/Docker-HOWTO)
+  * [salfactory - Mac OS X에서 docker 설치하기(시작하기)](http://www.devblog.kr/r/8y0gFPAvJ2Y9JCGYZ9qoZY8my3GyFTYJ42IJjcgOEPF)
+  * [Seapy's Blog - Mac에서 Docker 사용하기](http://seapy.com/2078)
+  * [Spoqa Tech Blog - docker the cloud](http://spoqa.github.io/2013/11/22/docker-the-cloud.html)
+  * [笑傲江湖 - RHEL7에서 Docker Container 사용하기](http://blog.naver.com/wonzer0/220029292959)
+  * [독거노인 개발자의 우울 - docker getting started: 왕초보를 위한 docker 입문](http://blog.iolo.kr/510)
+  * [야생강아지 WILDPUP - Docker의 소개와 간단한 사용법](http://wildpup.cafe24.com/archives/645)
+  * [월풍도원 - Docker](http://www.dorajistyle.pe.kr/2015/01/docker.html)
+
+소개 + 개념
+
+  * [hatemogi - 프로젝트 13일: 컨테이너 기반 가상화 프레임워크 - Docker](http://hatemogi.com/holiday-project-day-13/)
+  * [IT World Korea - 도커 101 : 가장 중요한 질문 8가지](http://www.itworld.co.kr/tags/64073/%EB%8F%84%EC%BB%A4/87971)
+  * [yisangwook - Docker 에 대한 오해](http://yisangwook.tumblr.com/post/89030483989/docker-misconceptions)
+  * [보리네 - docker 를 이해하기 위하여 #1](http://judekim.tistory.com/15) [#2](http://judekim.tistory.com/16)
+  * [오픈나루 - 오픈소스 슈퍼루키 Docker 이해 하기](http://opennaru.tistory.com/9)
+  * [조대협의 블로그 - Docker란 무엇인가?](http://bcho.tistory.com/805)
+  * [지디넷코리아 - '도커'에 개발·운영이 함께 흥분한 이유](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20140721102612)
+
+  
+
+
+  
+
+
+## 설치
+
+#### Docker 설치
+
+yum, apt-get 으로 그냥 설치된다.
+
+단! 커널 버전이 3.x 이상이어야 한다.
+
+참고하고 아래에서 골라 읽는 걸로...
+
+  * [nacyot의 프로그래밍 이야기 - 도커(Docker) 튜토리얼 : 0.8 맥에서 설치하기](http://blog.nacyot.com/articles/2014-02-11-dokcer-08-on-macosx/)
+  * [nacyot의 프로그래밍 이야기 - 우분투 14.04(Trusty Tahr)에서 도커(Docker) 설치 및 사용하기](http://blog.nacyot.com/articles/2014-04-18-docker-on-ubuntu-14-04/)
+  * [Seapy's Blog - CentOS 6.3에 Docker 설치하기](http://seapy.com/2080)
+  * [YONGBOK BLOG - How to install docker on ubuntu](http://www.yongbok.net/blog/how-to-install-docker-on-ubuntu/)
+  * [독거노인 개발자의 우울 - 맥에서 터미널만으로 docker 사용하기: macox + vmware/vmrun + docker](http://blog.iolo.kr/511)
+  * [보리네 - Installation of docker](http://judekim.tistory.com/17)
+  * [오픈나루 - CentOS 6.5 에서 Docker 설치하고 Fedroa 이미지 실행해 보기](http://opennaru.tistory.com/67)
+  * [유스풀패러다임 - OSX에서 Docker로 개발환경 구성하기](http://usefulparadigm.com/2014/02/10/building-devenv-on-osx-using-docker/)
+
+  
+
+
+#### Docker private registry 설치
+
+Docker 는 이미지를 저장하고 공유하기 위한 기본 Registry를 제공하고,
+
+개인적 이미지 관리를 위한 Registry 를 Docker 이미지로 제공한다.
+
+Docker 가 설치 되었다면,
+
+Docker 이미지를 통한 컨테이너를 실행하면 된다.
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6dGl0bGU9ZG9ja2VyIHJ1biBwcml2YXRlIHJlZ2lzdHJ5fGxhbmd1YWdlPWJhc2h9&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    # public registry 에서 이미지 받아오기.
+     
+    docker pull registry:latest
+     
+     
+    # 이미지를 통해 컨테이너 생성하기
+    # -p 포트포워딩, -d 데몬 모드로 실행, -e 외부에서 들어올 이미지를 저장하는 위치, --name 컨테이너 이름, registry 컨테이너를 생성하는데 사용할 이미지
+    docker run 
+            -d 
+            -e STORAGE_PATH=/registry 
+            --name "registry"
+            -p 5000:5000 
+            registry
+     
+    # 컨테이너 실행하기
+    #registry - 컨테이너 이름
+    docker restart registry
+     
+
+</td></tr></tbody></table>
+
+## 기본 사용법
+
+_**잊지 말자!**_
+
+__**이미지 - class**__
+
+__**컨테이너 - instance**__
+
+  
+
+
+### 이미지 받기, 컨테이너 생성, 컨테이너 실행, 이미지 수정, 이미지 외부 저장소로 올리기
+
+  
+
+
+#### 이미지 받기
+
+이미 공유되어 있는 많은 이미지들이 존재한다.
+
+아래 명령어로 받아보자
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6bGFuZ3VhZ2U9YmFzaH0&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    docker pull image-name
+
+</td></tr></tbody></table>
+
+  
+
+
+#### 컨테이너 생성
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6bGFuZ3VhZ2U9YmFzaH0&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+</td></tr></tbody></table>
+
+  
+
+
+#### 컨테이너 재실행
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6bGFuZ3VhZ2U9YmFzaH0&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    docker restart 컨테이너 이름
+
+</td></tr></tbody></table>
+
+  
+
+
+#### 이미지 수정
+
+정확히 말하면 이미지를 수정하는게 아니라 컨테이너에서 변경을 하고, docker commit 하면
+
+변경분이 이미지로 저장된다.
+
+docker diff 도 제공.
+
+  
+
+
+#### 이미지 외부 저장소로 올리기
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6bGFuZ3VhZ2U9YmFzaH0&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    #이미지에 태그를 달아야한다.
+     
+    docker tag 이미지이름 태그이름
+    ex: docker tag centos 100.255.11.183:5000/centos
+     
+    #태그된 이미지를 push 하자
+    docker push 100.255.11.183.5000/centos
+     
+     
+
+</td></tr></tbody></table>
+
+  
+
+
+### 팀 Docker private registry 정보
+
+docker-registry는 UI를 통해 제공하는것은 없고, Docker 명령어로 pull, push 를 할 수 있도록 기능만 제공함.
+
+예외적으로 /v1/search 하면 이미지 목록을 보여줌
+
+[http://de-app-dev01-mv:5000/](http://de-app-dev01-mv:5000/) 접속후 아래와 같이 나오면 정상임.
+
+[ 02. Docker > 스크린샷, 2015-02-13 17:44:22.png" src="http://wiki.coupang.net:8090/download/attachments/31686825/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C+2015-02-13+17%3A44%3A22.png?version=1&modificationDate=1423817100352" data-image-src="/download/attachments/31686825/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C+2015-02-13+17%3A44%3A22.png?version=1&modificationDate=1423817100352" data-linked-resource-id="30840517" data-linked-resource-type="attachment" data-linked-resource-default-alias="스크린샷, 2015-02-13 17:44:22.png" data-base-url="http://wiki.coupang.net:8090" data-linked-resource-container-id="31686825" data-mce-src="http://wiki.coupang.net:8090/download/attachments/31686825/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%2C+2015-02-13+17%3A44%3A22.png?version=1&modificationDate=1423817100352" style="border: 1px solid transparent; cursor: move;">](http://de-app-dev01-mv:5000/)
+
+  
+
+
+  
+
+
+### 로컬에서 private registry 접근 설정
+
+Mac OS :
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6dGl0bGU9Y29ubmVjdGlvbiBjb25maWcgdG8gcHJpdmF0ZSByZWdpc3RyeSBpbiBtYWMgb3N8bGFuZ3VhZ2U9YmFzaH0&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    boot2docker ssh
+     
+    echo 'EXTRA_ARGS="--insecure-registry 100.255.11.183:5000"' | sudo tee -a /var/lib/boot2docker/profile
+    sudo /etc/init.d/docker restart
+    
+    exit
+     
+
+</td></tr></tbody></table>
+
+Ubuntu :
+
+<table style="font-size:13.333333015442px;line-height:17.333333969116px;color:rgb(51,51,51);border:1px solid rgb(221,221,221);margin:0;padding:24px 2px 2px;clear:left;width:1810px;cursor:move;font-family:Arial, Helvetica, FreeSans, sans-serif;background-image:url('http://wiki.coupang.net:8090/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGU6dGl0bGU9Y29ubmVjdGlvbiBjb25maWcgdG8gcHJpdmF0ZSByZWdpc3RyeSBpbiB1YnVudHV8bGFuZ3VhZ2U9YmFzaH0&locale=ko_KR&version=2');background-position:0 0;background-repeat:no-repeat;" class="wysiwyg-macro" ><tbody ><tr style="font-size:10pt;line-height:13pt;" >
+<td style="font-size:10pt;line-height:13pt;margin:0;padding:10px;vertical-align:top;white-space:pre-wrap;border:1px solid rgb(221,221,221);box-shadow:rgb(240,240,240) 0 0 0 4px;cursor:text;" class="wysiwyg-macro-body" >
+    
+    sudo vi /etc/default/docker
+     
+    DOCKER_OPTS="$DOCKER_OPTS --insecure-registry=100.255.11.183:5000"
+     
+    sudo service docker restart
+
+</td></tr></tbody></table>
+
+  
+
+
+  
+
+
+02. Docker > 7c598f1403d172bdad15d826f712df0c.jpg" src="http://wiki.coupang.net:8090/download/attachments/31686825/7c598f1403d172bdad15d826f712df0c.jpg?version=1&modificationDate=1423818823452" data-image-src="/download/attachments/31686825/7c598f1403d172bdad15d826f712df0c.jpg?version=1&modificationDate=1423818823452" data-linked-resource-id="30840531" data-linked-resource-type="attachment" data-linked-resource-default-alias="7c598f1403d172bdad15d826f712df0c.jpg" data-base-url="http://wiki.coupang.net:8090" data-linked-resource-container-id="31686825" data-mce-src="http://wiki.coupang.net:8090/download/attachments/31686825/7c598f1403d172bdad15d826f712df0c.jpg?version=1&modificationDate=1423818823452" style="border: 1px solid transparent; cursor: move;">

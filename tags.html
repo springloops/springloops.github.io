@@ -1,0 +1,26 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+public: true
+---
+
+<div class="home">
+  <h1 class="page-heading">Tag Indexes</h1>
+
+  <ul class="post-list">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+      {% capture tag_name %}{{ tag | first }}{% endcapture %}
+      <a name="{{ tag_name | slugize }}"></a>
+      <h2 class="category" id="#{{ tag_name | slugize }}">{{ tag_name }}</h2>
+      <ul>
+        {% for post in site.tags[tag_name] %}
+        <li>
+          <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
+  </ul>
+</div>

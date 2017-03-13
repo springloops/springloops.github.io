@@ -1,0 +1,21 @@
+---
+author: springloops
+comments: true
+date: 2012-09-28 06:18:10+00:00
+layout: post
+link: https://springloops.wordpress.com/2012/09/28/%ed%8e%8c-%ec%b6%94%ec%b2%9c%ea%b2%80%ec%83%89-%ea%b5%ac%ed%98%84%ec%97%90-%eb%8c%80%ed%95%b4%ec%84%9c/
+published: false
+slug: '%ed%8e%8c-%ec%b6%94%ec%b2%9c%ea%b2%80%ec%83%89-%ea%b5%ac%ed%98%84%ec%97%90-%eb%8c%80%ed%95%b4%ec%84%9c'
+title: '[펌] 추천검색 구현에 대해서...'
+wordpress_id: 62
+categories:
+- Open Source/Apache Lucene/Solr
+tags:
+- 추천검색
+---
+
+1. : [http://blog.daum.net/hivaless/6609195](http://blog.daum.net/hivaless/6609195)
+
+2. : [http://blog.daum.net/hivaless/6609195](http://blog.daum.net/hivaless/6609195)
+
+3. : [http://blog.daum.net/hivaless/6609195](http://blog.daum.net/hivaless/6609195)

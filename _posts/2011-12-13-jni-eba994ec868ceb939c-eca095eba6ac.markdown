@@ -1,0 +1,110 @@
+---
+author: springloops
+comments: true
+date: 2011-12-13 05:39:03+00:00
+layout: post
+link: https://springloops.wordpress.com/2011/12/13/jni-%eb%a9%94%ec%86%8c%eb%93%9c-%ec%a0%95%eb%a6%ac/
+slug: jni-%eb%a9%94%ec%86%8c%eb%93%9c-%ec%a0%95%eb%a6%ac
+title: JNI 메소드 정리 ?
+wordpress_id: 38
+categories:
+- Tip
+tags:
+- JNI
+---
+
+
+
+  * **GetArrayLength(env, jobjectArray jarray)**  
+
+자바 배열의 길이를 구한다.  
+
+jsize size = (*env)->GetArrayLength(env, jargv);  
+
+
+
+
+
+
+  * **GetObjectArrayElement(JNIEnv * env, jobjectArray jarray, int pos)**  
+
+현재 배열의 원소를 얻는다.   
+
+jstring jrow = (jstring)(*env)->GetObjectArrayElement(env, jargv, i);   
+
+
+
+
+
+
+  * **GetStringUTFChars(JNIEnv * env, jstring jrow, 0)**  
+
+String 값을 C 문자열 (char *) 로 변환한다.  
+
+char * row = (*env)->GetStringUTFChars(env, jrow, 0);  
+
+
+
+
+
+
+  * **ReleaseStringUTFChars(JNIEnv * env, jstring jrow, char * row)**  
+
+String 객체를 메모리에서 해제한다.   
+
+(*env)->ReleaseStringUTFChars(env, jrow, row);  
+
+  
+
+
+
+
+
+
+  * **(env*)->GetJavaVM(env, &g_VM);**  
+
+Java VM에 대한 전역 참조를 저장한다.  
+
+
+
+
+
+
+  * **(*g_VM)->AttachCurrentThread(g_VM, (void **) &env, NULL);**  
+
+현재의 thread 를 JavaVM에 붙인다.  
+
+
+
+
+
+
+  * **jcass jNativeCls =  (*env)->FindClass(env, "xxx/yyy/zzz");**  
+
+두번째 인자로 지정한 class 의 참조를 구한다.   
+
+
+
+
+  * **jmethod  mSendStr = (*env)->GetStaticMethodID(env, jNativesCls, "OnMessage", "(Ljava/lang/String;)V");**  
+
+** **  
+
+jNativeCls class에 정의된 메소드의 참조를 구한다.  
+
+
+
+
+
+
+  * **(*env)->CallStaticVoidMethod(env, jNativesCls, mSendStr, (*env)->NewStringUTF(env, text) );**  
+
+참조된 메소드를 호출한다.  
+
+
+
+
+
+
+
+
