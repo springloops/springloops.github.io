@@ -5,9 +5,7 @@ date: 2017-11-03
 layout: post
 title: 'Installing Anaconda and Jupyter notebook'
 categories:
-- python
-- jupyter
-- anaconda
+- Python
 tags:
 - jupyter
 - anaconda
