@@ -25,7 +25,7 @@ Go [anaconda downloads](https://www.continuum.io/downloads)
 ```bash
 conda list
 ```
-![conda_list.png](/master/imgs/_for_posts/2017-11-03-conda-with-jupyter-notebook/conda_list.png)
+![conda_list.png](/imgs/_for_posts/2017-11-03-conda-with-jupyter-notebook/conda_list.png)
 
 ### conda 환경 생성
 
