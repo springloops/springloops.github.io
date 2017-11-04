@@ -1,3 +1,17 @@
+---
+author: springloops
+comments: true
+date: 2017-11-03
+layout: post
+title: 'Installing Anaconda and Jupyter notebook'
+categories:
+- python
+- jupyter
+- anaconda
+tags:
+- jupyter
+- anaconda
+---
 
 # Installing Anaconda and jupyter notebook
 
@@ -13,7 +27,7 @@ Go [anaconda downloads](https://www.continuum.io/downloads)
 ```bash
 conda list
 ```
-![conda_list.png](attachment:conda_list.png)
+![conda_list.png](/master/imgs/_for_posts/2017-11-03-conda-with-jupyter-notebook/conda_list.png)
 
 ### conda 환경 생성
 
@@ -30,7 +44,7 @@ conda create -n py3 python=3
 conda env list
 ```
 
-![conda_env_list.png](attachment:conda_env_list.png)
+![conda_env_list.png](/master/imgs/_for_posts/2017-11-03-conda-with-jupyter-notebook/conda_env_list.png)
 
 
 ### 가상 환경 접속
@@ -109,10 +123,10 @@ git clone https://github.com/hakimel/reveal.js.git
 
 
 1. View > Cell Toolbar > Slideshow 선택
-![menu_slideshow.png](attachment:menu_slideshow.png)
+![menu_slideshow.png](/master/imgs/_for_posts/2017-11-03-conda-with-jupyter-notebook/menu_slideshow.png)
 
 2. Slide Type 설정
-![slide_select_box.png](attachment:slide_select_box.png)
+![slide_select_box.png](/master/imgs/_for_posts/2017-11-03-conda-with-jupyter-notebook/slide_select_box.png)
 
 3. jupyter nbconvert 명령 실행
 ```bash
