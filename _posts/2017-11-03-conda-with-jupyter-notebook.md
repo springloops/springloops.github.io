@@ -64,7 +64,7 @@ conda install jupyter notebook
 ### 가상 환경내 설치된 패키지 확인
 
 ```bash
-conda env list
+conda list
 ```
 
 ### 가상 환경 설정 내보내기
